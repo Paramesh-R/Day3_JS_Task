@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q1. For the given JSON iterate over all for loops (for, for in, for of, forEach) 
+        var data;
+        var request = new XMLHttpRequest();
+        request.open('GET','https://restcountries.com/v2/all');
+        request.send();
+
+        request.onload=function(){
+            data = JSON.parse(request.response);
+            // FOR LOOP
+            console.log("Using FOR LOOP:\n\n");
+            for (var i=0; i<15; i++){
+                console.log(data[i].name);
+            }
+
+            //Using FOR IN LOOP
+            console.log("\n\n Using FOR IN loop:\n\n");
+            var n=0;
+            for (var i in data){
+                console.log(i + " " + data[i].alpha3Code);
+                n++;
+                if (n==15){
+                    break;
+                }
+            }
+
+            //Using FOR OF loop
+            console.log("\n\n Using FOR OF loop: \n\n");
+            n=0;
+            for (var i of data){
+                console.log(i.name + "\t\t"  +i.demonym);
+                n++;
+                if (n==15){
+                    break;
+                }
+            }
+
+            //Using FOR EACH loop
+            console.log("\n\n Using FOR EACH loop: \n\n");
+            data.forEach(element => console.log(element.name))
+        }
+
+    </script>
+</body>
+</html>
+
+

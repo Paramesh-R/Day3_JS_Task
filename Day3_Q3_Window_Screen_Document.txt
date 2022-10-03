@@ -1,0 +1,29 @@
+Question 3: Read about the difference between window, screen, and document in javascript.
+
+WINDOW:
+    • The Window is the actual global object.
+    • It sits at the top of the Javascript Object hierarchy.
+    • It represents the browser window.
+    • The window object is supported by all Browsers.
+    • All global Javascript object, functions and variables automatically become memebers of the window object.
+    • The window object represents the current browsing context like window.location, window.history, window.screen, window.status or window.document.
+    • Each browser tab has its own top level window object.
+    • Each of these windows gets its own separate global object.
+
+SCREEN:
+    • The screen contains the properties about the user's display.
+    • It is a small information object about physical screen dimensions.
+    • It can be used to display screen width, height, colorDepth, pixelDepth etc..
+    • It can be written without window prefix.
+    Properties:
+        - screen.width
+        - screen.height
+        - screen.availWidth
+
+DOCUMENT:
+    • The Document is a section of the screen used to display the contents of a document file in the browser.
+    • Document interface represents any webpage loaded in the browser and serves as an entry point into the web page's content, which is DOM tree.
+    • When an HTML document is loaded into a web browser, it becomes Document Object.
+    • Document Object is the root node of the HTML document.
+    • The document actually gets loaded inside the Window Object and it has properties like title, URL, cookie, etc..
+    

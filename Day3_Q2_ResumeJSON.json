@@ -1,0 +1,41 @@
+{
+  "basicdetails":{
+    "firstname": "Parameswaran" ,
+    "middlename":null,
+    "lastname":"R",
+    "email" : "parameswaran.r@outlook.com" ,
+    "mobile" : 9999888812,
+    "location": {
+      "address": "159 McAdenville Rd",
+      "postalCode": 500000,
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    }
+  }, 
+
+  "education":{
+    "institution": "ABC College Of Engineering",
+    "degree": "BE",
+    "department": "Computer Science and Engineering",
+    "batch": 2016,
+    "gpa": 7.5
+  },
+
+  "work":{
+    "company": "Tata Consultancy Services",
+    "position": "Analyst",
+    "startDate": "21-07-2016",
+    "endDate": "02-09-2022"
+  },
+  "skills":{
+    "Language":"Python,JavaScript"
+  },
+  
+  "languages":["Tamil, English"],
+  "interests": ["Cycling","Problem Solving"],
+  "profile":{
+    "github":"https://github.com/Paramesh-R",
+    "linkedin":"https://www.linkedin.com/in/parameswaran-r-6229a0247/"
+  }
+}
